@@ -73,4 +73,11 @@ LinguaFlow solves this by providing a scalable, API-driven translation system.
 
 ```bash
 pip install -r requirements.txt
-streamlit run app/app.py
+streamlit run app/app.py```
+
+
+ API Test
+
+curl -X POST https://<your-api-endpoint>/translate \
+-H "Content-Type: application/json" \
+-d '{"text":"Hello world","source_lang":"en","target_lang":"fr"}'
